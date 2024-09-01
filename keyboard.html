@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Keyboard</title>
+<style>
+.full{
+	margin: 100px;
+	text-align:center;
+	width:1050px;
+	border:groove #000;
+	border-radius:20px;
+	background-color: #000;
+	}
+	
+	.row0 .butt{
+		border:none;
+		height:50px;
+		width:50px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #333;
+		color:white;
+	}
+	.row0 .butt:hover{
+		border:none;
+		height:50px;
+		width:50px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+	}
+	.row0 .butt:active{
+		border:none;
+		height:50px;
+		width:50px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #FFF;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+	}
+	.row1 .butt, .row2 .butt, .row3 .butt, .row4 .butt{
+		border:none;
+		height:50px;
+		width:54.5px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #333;
+		color:white;
+	}
+	.row1 .butt:hover, .row2 .butt:hover, .row3 .butt:hover, .row4 .butt:hover{
+		border:none;
+		height:50px;
+		width:54.5px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+	}
+	.row1 .butt:active, .row2 .butt:active, .row3 .butt:active, .row4 .butt:active{
+		border:none;
+		height:50px;
+		width:54.5px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+	}
+	
+	.num{
+		border:none;
+		height:50px;
+		width:60px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+	}
+	.num:hover{
+		border:none;
+		height:50px;
+		width:60px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+	}
+	.num:active{
+		border:none;
+		height:50px;
+		width:60px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+	}
+	.backspace{
+		border:none;
+		height:50px;
+		width:155px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.backspace:hover{
+		border:none;
+		height:50px;
+		width:155px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.backspace:active{
+		border:none;
+		height:50px;
+		width:155px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.enter{
+		border:none;
+		height:50px;
+		width:150px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.enter:hover{
+		border:none;
+		height:50px;
+		width:150px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.enter:active{
+		border:none;
+		height:50px;
+		width:150px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.shift{
+		border:none;
+		height:50px;
+		width:170px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.shift:hover{
+		border:none;
+		height:50px;
+		width:170px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.shift:active{
+		border:none;
+		height:50px;
+		width:170px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.caps{
+		border:none;
+		height:50px;
+		width:90px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.caps:hover{
+		border:none;
+		height:50px;
+		width:90px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.caps:active{
+		border:none;
+		height:50px;
+		width:90px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+
+		.tab{
+		border:none;
+		height:50px;
+		width:120px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.tab:hover{
+		border:none;
+		height:50px;
+		width:120px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.tab:active{
+		border:none;
+		height:50px;
+		width:120px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.space{
+		border:none;
+		height:50px;
+		width:400px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.space:hover{
+		border:none;
+		height:50px;
+		width:400px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.space:active{
+		border:none;
+		height:50px;
+		width:400px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.row5 .butt{
+		border:none;
+		height:50px;
+		width:70px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.row5 .butt:hover{
+		border:none;
+		height:50px;
+		width:70px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.row5 .butt:active{
+		border:none;
+		height:50px;
+		width:70px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+		.pgup, .pgdown{
+		border:none;
+		height:50px;
+		width:100px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		}
+		.pgup:hover, .pgdown:hover{
+		border:none;
+		height:50px;
+		width:100px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #333;
+		color:white;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px white;
+		}
+		.pgup:active, .pgdown:active{
+		border:none;
+		height:50px;
+		width:100px;
+		border-radius:20px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		margin:2px;
+		padding:3px;
+		background-color: #fff;
+		color:black;
+		text-shadow:3px 3px 3px #CCCCCC;
+		box-shadow:3px 3px 3px red;
+		}
+</style>
+</head>
+
+<body bgcolor="#999999">
+<center><h1 class="owner"><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif">MADE BY MUHAMMAD FAHD RAFIQUE KHAN</font></h1></center>
+<div class="full">
+<div class="row0">
+<button class="num">esc</button>
+<button class="butt">f1</button>
+<button class="butt">f2</button>
+<button class="butt">f3</button>
+<button class="butt">f4</button>
+<button class="butt">f5</button>
+<button class="butt">f6</button>
+<button class="butt">f7</button>
+<button class="butt">f8</button>
+<button class="butt">f9</button>
+<button class="butt">f10</button>
+<button class="butt">f11</button>
+<button class="butt">f12</button>
+<button class="num">num</button>
+<button class="num">break</button>
+<button class="num">print</button>
+<button class="num">delete</button>
+</div>
+<div class="row1">
+<button class="butt">~</button>
+<button class="butt">1</button>
+<button class="butt">2</button>
+<button class="butt">3</button>
+<button class="butt">4</button>
+<button class="butt">5</button>
+<button class="butt">6</button>
+<button class="butt">7</button>
+<button class="butt">8</button>
+<button class="butt">9</button>
+<button class="butt">0</button>
+<button class="butt">-</button>
+<button class="butt">=</button>
+<button class="backspace">backspace</button>
+<button class="num">home</button>
+</div>
+<div class="row2">
+<button class="tab">tab</button>
+<button class="butt">Q</button>
+<button class="butt">W</button>
+<button class="butt">E</button>
+<button class="butt">R</button>
+<button class="butt">T</button>
+<button class="butt">Y</button>
+<button class="butt">U</button>
+<button class="butt">I</button>
+<button class="butt">O</button>
+<button class="butt">P</button>
+<button class="butt">[</button>
+<button class="butt">]</button>
+<button class="butt">\</button>
+<button class="pgup">pg up</button>
+</div>
+<div class="row3">
+<button class="caps">caps lock</button>
+<button class="butt">A</button>
+<button class="butt">S</button>
+<button class="butt">D</button>
+<button class="butt">F</button>
+<button class="butt">G</button>
+<button class="butt">H</button>
+<button class="butt">J</button>
+<button class="butt">K</button>
+<button class="butt">L</button>
+<button class="butt">;</button>
+<button class="butt">'</button>
+<button class="enter">enter</button>
+<button class="pgdown">pg dn</button>
+</div>
+<div class="row4">
+<button class="shift">shift</button>
+<button class="butt">Z</button>
+<button class="butt">X</button>
+<button class="butt">C</button>
+<button class="butt">V</button>
+<button class="butt">B</button>
+<button class="butt">N</button>
+<button class="butt">M</button>
+<button class="butt">,</button>
+<button class="butt">.</button>
+<button class="butt">/</button>
+<button class="shift">shift</button>
+<button class="butt">end</button>
+</div>
+<div class="row5">
+<button class="butt">ctrl</button>
+<button class="butt">fn</button>
+<button class="butt">win</button>
+<button class="butt">alt</button>
+<button class="space">space</button>
+<button class="butt">alt</button>
+<button class="butt">win</button>
+<button class="butt">fn</button>
+<button class="butt">ctrl</button>
+</div>
+</div>
+</body>
+</html>
